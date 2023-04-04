@@ -1,10 +1,10 @@
-# RealioNetwork Testnet
+# RealioNetwork Mainnet
 
 ## Instructions
 
 ## Full nodes and general participants
 
-Follow the instructions on the official documentation to [join the testnet](https://docs.realio.network/testnet/overview) 
+Follow the instructions on the official documentation to [join the mainnet](https://docs.realio.network/mainnet/overview) 
 
 The team is [available on discord](https://discord.gg/Nv9EUbRnKb)
 
@@ -16,7 +16,7 @@ Verify the SHA256 checksum using:
 
 ```bash
 sha256sum genesis.json
-# 695c10ad99740908d6a1efb2260b51eeeb1c496ac3e515fcf18933b51633d2e8  genesis.json
+# TODO  genesis.json
 ```
 
 ## Details
@@ -24,19 +24,19 @@ sha256sum genesis.json
 - Network Chain ID: `realionetwork_3301-1`
 - EIP155 Chain ID: `3301`
 - Explorer: 
-- `realio-networkd` version: [`v0.8.0-rc3`](https://github.com/realiotech/realio-network/releases/tag/v0.8.0-rc3)
+- `realio-networkd` version: [`v0.8.0-rc4`](https://github.com/realiotech/realio-network/releases/tag/v0.8.0-rc4)
    ```bash
      realio-networkd version --long
     
-    commit: 4f1a74abc74a34094a67c3ef479739dacc78ae42
+    commit: 692d8ccbd4c229135445d82b51bd2dfd52224651
     cosmos_sdk_version: v0.46.11
-    go: go version go1.20.2 darwin/arm64
+    go: go version go1.20.2 
     name: realio-network
     server_name: realio-networkd
-    version: 0.8.0-rc3
+    version: 0.8.0-rc4
     
     ```
 
-## Seeds & Peers
+## Community
 
-Pop in the [ testnet seed channel on discord](https://discord.gg/Nv9EUbRnKb) and ask for a peer/seed node
+Pop in the [ discord](https://discord.gg/Nv9EUbRnKb) to ask questions and get help.

@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2023-03-31T12:00:00.20279857Z",
-  "chain_id": "realionetwork_3300-1",
+  "genesis_time": "2023-04-07T17:00:00.000000Z",
+  "chain_id": "realionetwork_3301-1",
   "initial_height": "1",
   "consensus_params": {
     "block": {
@@ -27,13 +27,11 @@
       "tokens": [
         {
           "authorizationRequired": true,
-          "authorized": {
-            "realio1rj6my433u6wzzev6xvduggwvq30pfhwtsac3qa": {
-              "address": "realio1cvy5tkqyx6ppe6rhduszeww6tflth4dvpan7ht",
-              "authorized": true,
-              "tokenSymbol": "rst"
-            }
-          },
+          "authorized": [{
+            "address": "realio1cvy5tkqyx6ppe6rhduszeww6tflth4dvpan7ht",
+            "authorized": true
+          }
+          ],
           "manager": "realio1cvy5tkqyx6ppe6rhduszeww6tflth4dvpan7ht",
           "name": "Realio Security Token",
           "symbol": "rst",
@@ -59,6 +57,26 @@
             "sequence": "0"
           },
           "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "realio1htr8hrky90m7xx7t0n7ca0wfxf5hwu9gk5t4y3",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "@type": "/ethermint.types.v1.EthAccount",
+          "base_account": {
+            "address": "realio15ess4lvw9hcvf4na3v2a2lnntdqhvqgtae5p57",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          },
+          "code_hash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
         }
       ]
     },
@@ -72,22 +90,49 @@
       },
       "balances": [
         {
+          "address": "realio15ess4lvw9hcvf4na3v2a2lnntdqhvqgtae5p57",
+          "coins": [
+            {
+              "denom": "ario",
+              "amount": "45000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "realio1htr8hrky90m7xx7t0n7ca0wfxf5hwu9gk5t4y3",
+          "coins": [
+            {
+              "denom": "ario",
+              "amount": "100000000000000000000"
+            },
+            {
+              "denom": "arst",
+              "amount": "25000000000000000000000000"
+            }
+          ]
+        },
+        {
           "address": "realio1cvy5tkqyx6ppe6rhduszeww6tflth4dvpan7ht",
           "coins": [
             {
               "denom": "arst",
-              "amount": "50000000000000000000000000"
+              "amount": "25000000000000000000000000"
             }
           ]
         }
       ],
       "supply": [
-          {
-            "denom": "arst",
-            "amount": "50000000000000000000000000"
-          }
+        {
+          "denom": "ario",
+          "amount": "45000100000000000000000000"
+        },
+        {
+          "denom": "arst",
+          "amount": "50000000000000000000000000"
+        }
       ],
       "denom_metadata": [
+
         {
           "description": "The native utility, gas, evm, governance and staking token of the Realio Network",
           "denom_units": [
@@ -215,8 +260,7 @@
       "block_gas": "0"
     },
     "genutil": {
-      "gen_txs": [
-      ]
+      "gen_txs": []
     },
     "gov": {
       "starting_proposal_id": "1",
@@ -276,7 +320,7 @@
     },
     "mint": {
       "minter": {
-        "inflation": "0.000000000000000000",
+        "inflation": "0.120000000000000000",
         "annual_provisions": "0.000000000000000000"
       },
       "params": {
@@ -304,7 +348,7 @@
         "max_entries": 7,
         "historical_entries": 10000,
         "bond_denom": "ario,arst",
-        "min_commission_rate": "0.050000000000000000"
+        "min_commission_rate": "0.000000000000000000"
       },
       "last_total_power": "0",
       "last_validator_powers": [],
@@ -318,8 +362,8 @@
       "port_id": "transfer",
       "denom_traces": [],
       "params": {
-        "send_enabled": false,
-        "receive_enabled": false
+        "send_enabled": true,
+        "receive_enabled": true
       }
     },
     "upgrade": {},
