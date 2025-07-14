@@ -30,7 +30,7 @@ sha256sum genesis.json
     
     commit: f6df1a734e80c612a08823773f60b0f44c55ee05
     cosmos_sdk_version: v0.50.13
-    go: go version go1.23.56
+    go: go version go1.23.6
     name: realio-network
     server_name: realio-networkd
     version: 1.3.0
