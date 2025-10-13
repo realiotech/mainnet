@@ -24,16 +24,16 @@ sha256sum genesis.json
 - Network Chain ID: `realionetwork_3301-1`
 - EIP155 Chain ID: `3301`
 - Explorer: 
-- `realio-networkd` version: [`v1.3.0`](https://github.com/realiotech/realio-network/releases/tag/v1.3.0)
+- `realio-networkd` version: [`v1.4.0`](https://github.com/realiotech/realio-network/releases/tag/v1.4.0)
    ```bash
      realio-networkd version --long
     
-    commit: f6df1a734e80c612a08823773f60b0f44c55ee05
+    commit: adfc8d1bf465a1f2c6f4c248b169cb2ac26571af
     cosmos_sdk_version: v0.50.13
     go: go version go1.23.6
     name: realio-network
     server_name: realio-networkd
-    version: 1.3.0
+    version: 1.4.0
     
     ```
 
