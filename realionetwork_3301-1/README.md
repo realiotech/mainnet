@@ -28,12 +28,12 @@ sha256sum genesis.json
    ```bash
      realio-networkd version --long
     
-    commit: adfc8d1bf465a1f2c6f4c248b169cb2ac26571af
+    commit: 3d38f1889c94562f0d24bad214d620844e0557cc
     cosmos_sdk_version: v0.50.13
     go: go version go1.23.6
     name: realio-network
     server_name: realio-networkd
-    version: 1.4.0
+    version: 1.6.0
     
     ```
 
